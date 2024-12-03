@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Tracker</h1>
+        <form id="mood-form">
+            <label for="mood">Select your mood:</label>
+            <select id="mood" required>
+                <option value="😊">😊 Happy</option>
+                <option value="😢">😢 Sad</option>
+                <option value="😡">😡 Angry</option>
+                <option value="😴">😴 Tired</option>
+                <option value="😌">😌 Relaxed</option>
+            </select>
+            <button type="submit">Log Mood</button>
+        </form>
+        <div id="mood-log">
+            <h2>Logged Moods</h2>
+            <ul id="mood-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
